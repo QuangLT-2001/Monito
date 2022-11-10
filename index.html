@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monito</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link
+      rel="icon"
+      href="assets/image/logo.png"
+      sizes="16x16"
+      type="images/png"
+    />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section id="page">
+      <header id="header">
+        <nav
+          class="justify-content-between align-items-center navbar navbar-expand-lg navbar-light bg-transparent header__bootstrap fixed-top"
+        >
+          <div class="container justify-content-between align-items-center">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                class="logo"
+                src="assets/image/header/logo.png"
+                alt="logo website"
+              />
+            </a>
+
+            <div
+              class="form__search__mobile d-flex align-items-center justify-content-center d-lg-none"
+            >
+              <label for="searchMobile" class="icon__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-between align-items-center"
+              id="navbarText"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Contact</a>
+                </li>
+              </ul>
+              <div
+                class="navbar-right d-flex flex-column flex-lg-row justify-content-end align-content-center"
+              >
+                <div class="form__search d-none d-lg-block">
+                  <label for="search" class="icon__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </label>
+                  <input
+                    type="text"
+                    name="search"
+                    value=""
+                    id="search"
+                    placeholder="Search something here!"
+                  />
+                </div>
+                <button
+                  class="w-25 btn btn-primary rounded-pill m-0 me-lg-3 ms-lg-3 mt-3 mb-3 mt-lg-0 mb-lg-0"
+                >
+                  Join the community
+                </button>
+
+                <div class="dropdown">
+                  <a
+                    class="btn btn-select d-flex align-items-center"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="me-2"
+                      src="assets/image/header/vnd.png"
+                      alt="VNĐ"
+                    />
+                    VND
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown__language"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class="me-2"
+                          src="assets/image/header/vnd.png"
+                          alt="VNĐ"
+                        />
+                        VND
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class="me-2"
+                          src="assets/image/header/gbp.png"
+                          alt="GBP"
+                        />
+                        GBP</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="main__banner pt-5 d-flex align-items-center">
+          <div class="banner__content d-flex container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 pt-5 pb-5">
+                  <h1 class="title__banner text-primary">One more friend</h1>
+                  <h2 class="title__banner__slogan text-primary">Thousands more fun!</h2>
+                  <p class="descript__banner">
+                    Having a pet means you have more joy, a new friend, a happy
+                    person who will always be with you to have fun. We have 200+
+                    different pets that can meet your needs!
+                  </p>
+                  <div
+                  class="btn__banner d-flex flex-column flex-sm-row  justify-content-center justify-content-lg-start"
+                >
+                  <button
+                    class="text-primary mb-3 mb-sm-0 border-2 border-primary btn rounded-pill  me-sm-3 m-0 btn-video"
+                  >
+                    View Intro
+                  </button>
+                  <button class="btn btn-primary rounded-pill">
+                    Explore Now
+                  </button>
+                </div>
+                </div>
+                <div class="col-lg-6 d-block d-lg-none">
+                  <img
+                  src="assets/image/home/banner-2.png"
+                  class="w-100"
+                  alt="banner image"
+                />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner__image col-md-6 d-none d-lg-block">
+              <img
+                src="assets/image/home/banner-2.png"
+                class="w-100"
+                alt="banner image"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="main__product pt-5 pb-5">
+          <div class="container">
+            <div class="mb-3 header__product d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+              <div class="header__left">
+                <h5 class="component__title--sm">
+                  Whats new?
+                </h5>
+                <h3 class="component__title--lg text-primary">
+                  Take a look at some of our pets
+                </h3>
+              </div>
+              <div class="header__right d-none d-lg-block">
+                <button
+                        class="border-2 border-primary btn rounded-pill mb-3 me-3 btn-more"
+                      >
+                        View more
+                      </button>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product1.png" alt="MO231 - Pomeranian White" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO231 - Pomeranian White
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Male</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>6.900.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product2.png" alt="MO502 - Poodle Tiny Yellow" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO502 - Poodle Tiny Yellow
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Female</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>3.900.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product3.png" alt="MO102 - Poodle Tiny Sepia" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO102 - Poodle Tiny Sepia
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Male</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>4.000.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product4.png" alt="MO512 - Alaskan Malamute Grey" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO512 - Alaskan Malamute Grey
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Male</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>8.900.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product5.png" alt="MO231 - Pembroke Corgi Cream" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO231 - Pembroke Corgi Cream
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Male</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>7.900.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product6.png" alt="MO502 - Pembroke Corgi Tricolor" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO502 - Pembroke Corgi Tricolor
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Female</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>9.000.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product7.png" alt="MO231 - Pomeranian White" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO231 - Pomeranian White
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Female</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>6.500.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product8.png" alt="MO512 - Poodle Tiny Dairy Cow" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      MO512 - Poodle Tiny Dairy Cow
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Gene: <b>Male</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Age: <b>02 months</b></span>
+                    </p>
+                    <span class="price">
+                      <b>5.000.000 VND</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-lg-none col-12">
+                <button
+                        class="border-2 border-primary btn rounded-pill mb-3 me-3 btn-more
+                        w-100"
+                      >
+                        View more
+                      </button>
+              </div>
+
+
+            </div>
+          </div>
+
+        </section>
+        <section class="main__banner__body pt-5 pb-5">
+          <div class="container  pb-0 p-5">
+            <div class="row text-lg-end  flex-column-reverse flex-lg-row">
+              <div class="col-lg-6 d-flex align-items-end">
+                <img class="w-100" src="assets/image/home/banner3.png" alt="banner One More Friend">
+              </div>
+              <div class="pt-3 pb-3 col-lg-6 text-center text-md-end d-flex flex-column align-items-center align-items-md-end justify-content-center">
+                <h1 class="title__banner text-primary">One more friend</h1>
+                  <h2 class="title__banner__slogan text-primary">Thousands more fun!</h2>
+                  <p class="descript__banner">
+                    Having a pet means you have more joy, a new friend, a happy
+                    person who will always be with you to have fun. We have 200+
+                    different pets that can meet your needs!
+                  </p>
+                  <div
+                    class="btn__banner d-flex flex-column flex-sm-row  justify-content-center"
+                  >
+                    <button
+                      class="text-primary mb-3 mb-sm-0 border-2 border-primary btn rounded-pill  me-sm-3 m-0 btn-video"
+                    >
+                      View Intro
+                    </button>
+                    <button class="btn  btn-primary rounded-pill">
+                      Explore Now
+                    </button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__product pt-5 pb-5">
+          <div class="container">
+            <div class="header__product mb-3 d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+              <div class="header__left">
+                <h5 class="component__title--sm">
+                  Hard to choose right products for your pets?
+                </h5>
+                <h3 class="component__title--lg text-primary">
+                  Our Products
+                </h3>
+              </div>
+              <div class="header__right d-none d-lg-block">
+                <button
+                        class="border-2 border-primary btn rounded-pill mb-3 me-3 btn-more"
+                      >
+                        View more
+                      </button>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product9.png" alt="Reflex Plus Adult Cat Food Salmon" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Reflex Plus Adult Cat Food Salmon
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Dog Food</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Size: <b>385gm</b></span>
+                    </p>
+                    <span class="price">
+                      <b>140.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Toy & Free Shaker
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product10.png" alt="Reflex Plus Adult Cat Food Salmon" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Reflex Plus Adult Cat Food Salmon
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Cat Food</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Size: <b>1.5kg</b></span>
+                    </p>
+                    <span class="price">
+                      <b>165.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Toy & Free Shaker
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product11.png" alt="Cat scratching ball toy kitten sisal rope ball" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Cat scratching ball toy kitten sisal rope ball
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Toy</b>
+                      </span>
+                    </p>
+                    <span class="price">
+                      <b>1.100.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Cat Food
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product12.png" alt="Cute Pet Cat Warm Nest" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Cute Pet Cat Warm Nest
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Toy</b>
+                      </span>
+
+                    </p>
+                    <span class="price">
+                      <b>410.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Cat Food
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product13.png" alt="NaturVet Dogs - Omega-Gold Plus Salmon Oil" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      NaturVet Dogs - Omega-Gold Plus Salmon Oil
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Dog Food</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Size: <b>385gm</b></span>
+                    </p>
+                    <span class="price">
+                      <b>350.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Toy & Free Shaker
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product14.png" alt="Costumes Fashion Pet Clother Cowboy Rider" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Costumes Fashion Pet Clother Cowboy Rider
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Costume</b>
+                      </span>
+                      <b>
+                        <span class="ms-3 me-3">.</span>
+                      </b>
+                      <span class="age">Size: <b>1.5kg</b></span>
+                    </p>
+                    <span class="price">
+                      <b>500.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Toy & Free Shaker
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product15.png" alt="Costumes Chicken Drumsti ck Headband" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Costumes Chicken Drumsti ck Headband
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Costume</b>
+                      </span>
+
+                    </p>
+                    <span class="price">
+                      <b>400.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Cat Food
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 col-sm-6">
+                <div class="product__content p-3">
+                  <div class="image__product w-100">
+                    <a href="#">
+                      <img src="assets/image/home/product16.png" alt="Plush Pet Toy" class="w-100">
+                    </a>
+                  </div>
+                  <div class="info__product mt-3">
+                    <h4 class="name__product">
+                      Plush Pet Toy
+                    </h4>
+                    <p class="desc__product d-flex align-items-center">
+                      <span class="gender">
+                        Product: <b>Toy</b>
+                      </span>
+
+                    </p>
+                    <span class="price">
+                      <b>250.000 VND</b>
+                    </span>
+                    <button class="btn btn-free w-100">
+                      <span class="icon__free">
+                        <img src="assets/image/home/free.png" alt="">
+                      </span>
+                      <span class="dot">
+                        .
+                      </span>
+                      <span class="text__free">
+                        Free Cat Food
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-lg-none col-12">
+                <button
+                        class="border-2 border-primary btn rounded-pill mb-3 me-3 btn-more
+                        w-100"
+                      >
+                        View more
+                      </button>
+              </div>
+
+
+            </div>
+          </div>
+
+        </section>
+        <section class="main__sellers pt-5 pb-5">
+          <div class="container">
+            <div class="header__sellers d-flex justify-content-between align-items-center mb-5">
+              <div class="text-primary d-flex align-items-center">
+                Proud to be part of <h3 class="title__donor ms-1">
+                  Pet Sellers
+                </h3>
+              </div>
+              <button
+                      class="text-primary  border-2 border-primary btn rounded-pill   btn-video"
+                    >
+                    View all our sellers
+                    </button>
+            </div>
+            <div class="seller__slider g-3">
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller1.png" alt="seller 1">
+              </div>
+              <div  class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller2.png" alt="seller 2">
+              </div>
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller3.png" alt="seller 3">
+              </div>
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller4.png" alt="seller 4">
+              </div>
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller5.png" alt="seller 5">
+              </div>
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller6.png" alt="seller 6">
+              </div>
+              <div class="seller__item pe-lg-4 p-lg-0 ps-3 pe-3">
+                <img class="w-100" src="assets/image/home/seller7.png" alt="seller 7">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__banner__adoption">
+          <div class="container">
+            <div class="row">
+              <div class="container  p-5">
+                <div class="row text-lg-start">
+
+                  <div class="pt-3 pb-3 col-lg-6 text-center text-md-start d-flex flex-column align-items-center align-items-md-start justify-content-center">
+                    <h1 class="d-flex align-items-center lh-1 title__banner text-primary">Adoption
+                      <span class="adoption__metrix ms-2">
+                        <img src="assets/image/home/chan.png" alt="title adoption">
+                      </span>
+                    </h1>
+                      <h2 class="title__banner__slogan text-primary">We need help. so do they.</h2>
+                      <p class="descript__banner">
+                        Adopt a pet and give it a home,
+it will be love you back unconditionally.
+                      </p>
+                      <div
+                        class="btn__banner d-flex flex-column flex-sm-row  justify-content-center"
+                      >
+                      <button class="btn mb-3 mb-md-0  btn-primary rounded-pill me-md-3 m-0">
+                        Explore Now
+                      </button>
+                        <button
+                          class="text-primary  border-2 border-primary btn rounded-pill   btn-video"
+                        >
+                          View Intro
+                        </button>
+
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__post pt-5 pb-5">
+          <div class="container">
+            <div class="header__product d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+              <div class="header__left">
+                <h5 class="component__title--sm">
+                  You already know ?
+                </h5>
+                <h3 class="component__title--lg text-primary">
+                  Useful pet knowledge
+                </h3>
+              </div>
+              <div class="header__right d-none d-lg-block">
+                <button
+                        class="border-2 border-primary btn rounded-pill mb-3 me-3 btn-more"
+                      >
+                        View more
+                      </button>
+              </div>
+            </div>
+            <div class="row g-3 mt-3">
+              <div class="col-md-4 col-sm-6">
+                <div class="post__content p-3">
+                  <div class="image__post">
+                    <a href="#">
+                      <img class="w-100" src="assets/image/home/post1.png" alt="What is a Pomeranian? How to Identify Pomeranian Dogs">
+                    </a>
+                  </div>
+                  <div class="mt-3 info__post">
+                    <span class="text-white btn btn-knowledge">
+                      Pet knowledge
+                    </span>
+                    <h3 class="name__post">
+                      What is a Pomeranian? How to Identify Pomeranian Dogs
+                    </h3>
+                    <p class="desc__post">
+                      The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="post__content p-3">
+                  <div class="image__post">
+                    <a href="#">
+                      <img class="w-100" src="assets/image/home/post2.png" alt="Dog Diet You Need To Know">
+                    </a>
+                  </div>
+                  <div class="mt-3 info__post">
+                    <span class="text-white btn btn-knowledge">
+                      Pet knowledge
+                    </span>
+                    <h3 class="name__post">
+                      Dog Diet You Need To Know
+                    </h3>
+                    <p class="desc__post">
+                      Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="post__content p-3">
+                  <div class="image__post">
+                    <a href="#">
+                      <img class="w-100" src="assets/image/home/post3.png" alt="Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively">
+                    </a>
+                  </div>
+                  <div class="mt-3 info__post">
+                    <span class="text-white btn btn-knowledge">
+                      Pet knowledge
+                    </span>
+                    <h3 class="name__post">
+                      Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively
+                    </h3>
+                    <p class="desc__post">
+                      Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-12 header__right d-block d-md-none">
+                <button
+                        class="w-100 border-2 border-primary btn rounded-pill  btn-more"
+                      >
+                        View more
+                      </button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+      <footer id="footer" class="text-light">
+        <div class="container pt-5 pb-5">
+          <div class="bg-primary rounded footer__contact p-4">
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="title__form text-center text-sm-start  mb-3">
+                  Register now so you don't miss our programs
+                </h4>
+              </div>
+              <div class="col-md-8">
+                <div class="enter__form p-3 d-flex bg-white flex-column flex-md-row rounded align-items-start">
+                  <input type="text" class="me-3 form-control w-75" name="email" value="" placeholder="Enter your Email">
+                  <button class="flex-grow-0 flex-md-grow-1  btn btn-primary mt-3 mt-md-0">
+                    Subcribe Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-bottom border-1 footer__menu pt-5 pb-4 d-flex  mb-4 justify-content-between flex-md-row flex-column">
+            <ul class="list__menu d-flex p-0 flex-md-row flex-column">
+              <li class="menu__item">
+                <a href="#" class="me-md-3 me-0 menu__link text-dark">
+                  Home
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="me-0 me-md-3 ms-md-3 ms-0  menu__link text-dark">
+                  Category
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="me-0 me-md-3 ms-md-3 ms-0 menu__link text-dark">
+                  About
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="me-0 me-md-3 ms-md-3 ms-0 menu__link text-dark">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <ul class="list__social d-flex p-0 flex-wrap">
+              <li class="social__item">
+                <a href="#" class="social__link pe-3 text-dark">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link pe-3 ps-3 text-dark">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link ps-3 pe-3 text-dark">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link ps-3 text-dark">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom pt-4 ">
+            <div class="row">
+              <div class="col-md-4 order-3 order-md-1">
+                <p class="text-dark p-0 text-center text-md-start">© 2022 Monito. All rights reserved.</p>
+              </div>
+              <div class="col-md-4 text-center order-1 order-md-2">
+                <a class="navbar-brand" href="#">
+                  <img
+                    class="logo"
+                    src="assets/image/header/logo.png"
+                    alt="logo website"
+                  />
+                </a>
+              </div>
+              <div class="col-md-4 text-center text-md-end  order-2 order-md-3 mt-3 mb-3 mt-md-0 mb-md-0">
+                <a class="text-dark" href="#">
+                  Terms of Service
+                </a> &emsp;
+                <a href="#" class="text-dark">
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <!-- fontawesome -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- bootstrap 5 -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/js/toggle.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/select.js"></script>
+
+  <!-- slick slider -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/slider.js"></script>
+</html>

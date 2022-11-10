@@ -1,0 +1,10 @@
+#footer.text-light {
+     background: var(--text-secondary) !important;
+
+}
+.title__form {
+     max-width: 380px;
+}
+.menu__item,.social__item {
+     font-size: 1.2rem;
+}

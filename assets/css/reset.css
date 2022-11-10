@@ -1,0 +1,55 @@
+@font-face {
+     font-family: 'SVN-Gilroy';
+     src: url(../fonts/SVN-Gilroy\ Bold.otf);
+}
+@font-face {
+     font-family: 'SVN-Gilroy Light';
+     src: url(../fonts/SVN-Gilroy\ Light.otf);
+}
+* {
+     box-sizing: border-box;
+     font-family: 'SVN-Gilroy Light';
+     user-select: none;
+     font-weight: 700;
+
+}
+html {
+     font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,b {
+     font-family: 'SVN-Gilroy';
+}
+body {
+     padding: 0;
+     margin: 0;
+     width: 100%;
+     height: 100%;
+     overflow-x: hidden;
+}
+a {
+     text-decoration: none;
+}
+ul,ol {
+     list-style: none;
+}
+input, textarea, button {
+     outline: none;
+}
+.text-dark {
+     color: #494949 !important;
+}
+.btn {
+     min-width: 200px;
+}
+.dropdown > .btn {
+     min-width: 0;
+}
+.btn-primary, .bg-primary{
+     background: var(--text-primary) !important;
+}
+.border-primary  {
+     border-color: var(--text-primary) !important;
+}
+.text-primary {
+     color: var(--text-primary) !important;
+}

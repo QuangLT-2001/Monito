@@ -1,0 +1,8 @@
+:root {
+     --text-primary: #003459;
+     --text-secondary: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+     --text-white: #fff;
+     --fs: 16px;
+     --text-gray: #494949;
+     --text-link: #FCEED5;
+}

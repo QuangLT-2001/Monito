@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category - Monito</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/category.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link
+      rel="icon"
+      href="assets/image/logo.png"
+      sizes="16x16"
+      type="images/png"
+    />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="page">
+      <header id="header">
+        <nav
+          class="justify-content-between align-items-center navbar navbar-expand-lg navbar-light bg-transparent header__bootstrap"
+        >
+          <div class="container justify-content-between align-items-center">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                class="logo"
+                src="assets/image/header/logo.png"
+                alt="logo website"
+              />
+            </a>
+
+            <div
+              class="form__search__mobile d-flex align-items-center justify-content-center d-lg-none"
+            >
+              <label for="searchMobile" class="icon__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-between align-items-center"
+              id="navbarText"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Contact</a>
+                </li>
+              </ul>
+              <div
+                class="navbar-right d-flex flex-column flex-lg-row justify-content-end align-content-center"
+              >
+                <div class="form__search d-none d-lg-block">
+                  <label for="search" class="icon__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </label>
+                  <input
+                    type="text"
+                    name="search"
+                    value=""
+                    id="search"
+                    placeholder="Search something here!"
+                  />
+                </div>
+                <button
+                  class="w-25 btn btn-primary rounded-pill m-0 me-lg-3 ms-lg-3 mt-3 mb-3 mt-lg-0 mb-lg-0"
+                >
+                  Join the community
+                </button>
+
+                <div class="dropdown">
+                  <a
+                    class="btn btn-select d-flex align-items-center"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="me-2"
+                      src="assets/image/header/vnd.png"
+                      alt="VNĐ"
+                    />
+                    VND
+                  </a>
+
+                  <ul
+                    class="dropdown-menu dropdown__language"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class="me-2"
+                          src="assets/image/header/vnd.png"
+                          alt="VNĐ"
+                        />
+                        VND
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item d-flex align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class="me-2"
+                          src="assets/image/header/gbp.png"
+                          alt="GBP"
+                        />
+                        GBP</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <!-- breadcrumb  -->
+        <div class="container">
+          <div class="breadcrumb">
+            <ul class="p-0 m-0 list__element d-flex">
+              <li class="element__item">
+                <a href="#" class="element__link text-dark"> Home </a>
+                >
+              </li>
+              <li class="element__item">
+                <a href="#" class="element__link text-dark"> Dog </a>
+                >
+              </li>
+              <li class="element__item">
+                <a href="#" class="element__link text-dark"> Small Dog </a>
+              </li>
+            </ul>
+          </div>
+          <section class="ps-5 pe-5 main__banner">
+            <div class="align-items-end row flex-column-reverse flex-lg-row">
+              <div class="col-lg-6 position-relative banner__content">
+                <img
+                  src="assets/image/category/banner1.png"
+                  class="w-100"
+                  alt="One More Friend"
+                />
+              </div>
+              <div
+                class="d-flex flex-column align-items-start align-items-lg-end position-relative banner__content text-start text-md-end pt-5 pb-3 pb-lg-5 col-lg-6"
+              >
+                <h1 class="title__banner text-white">One More Friend</h1>
+                <h2 class="slogan__banner text-white">Thousands more fun!</h2>
+                <p class="desc__banner text-light">
+                  Having a pet means you have more joy, a new friend, a happy
+                  person who will always be with you to have fun. We have 200+
+                  different pets that can meet your needs!
+                </p>
+                <div
+                  class="btn__banner d-flex flex-column flex-sm-row justify-content-center justify-content-md-end"
+                >
+                  <button
+                    class="text-white mb-3 mb-sm-0 border-2 border-white btn rounded-pill me-sm-3 m-0 btn-video"
+                  >
+                    View Intro
+                  </button>
+                  <button class="btn btn-light rounded-pill">
+                    Explore Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="banner__background">
+              <img
+                src="assets/image/category/Banner.png"
+                class="d-none d-lg-block w-100"
+                alt=""
+              />
+              <img
+                src="assets/image/category/banner__mobile.png"
+                class="d-block d-lg-none w-100"
+                alt=""
+              />
+            </div>
+          </section>
+          <section class="pt-3 pb-3 main__product">
+            <div class="row">
+              <div class="col-lg-3">
+                <h3 class="title__navbar text-primary">Filter</h3>
+                <div class="list__filter">
+                  <div class="filter__item border-1 border-bottom pt-3 pb-3">
+                    <h4 class="name__filter">Gender</h4>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="male"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label for="male"> Male </label>
+                    </div>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="female"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label for="female"> Female </label>
+                    </div>
+                  </div>
+                  <div class="filter__item border-1 border-bottom pt-3 pb-3">
+                    <h4 class="name__filter">Color</h4>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="red"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        for="red"
+                        style="--color: #ff564f"
+                      >
+                        Red
+                      </label>
+                    </div>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="Apricot"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        style="--color: #ffb672"
+                        for="Apricot"
+                      >
+                        Apricot
+                      </label>
+                    </div>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="black"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        style="--color: #000"
+                        for="black"
+                      >
+                        Black
+                      </label>
+                    </div>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="black & white"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        style="
+                          --color: linear-gradient(
+                            90deg,
+                            #242b33 0%,
+                            #242b33 52.59%,
+                            #d7d7d7 52.6%,
+                            #d2d2d2 100%
+                          );
+                        "
+                        for="black & white"
+                      >
+                        black & white
+                      </label>
+                    </div>
+
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="Silver"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        style="--color: #cecece"
+                        for="Silver"
+                      >
+                        Silver
+                      </label>
+                    </div>
+
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="Tan"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label
+                        class="d-flex align-items-center"
+                        style="--color: #fff7ce"
+                        for="Tan"
+                      >
+                        Tan
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="filter__item border-1 border-bottom pt-3 pb-3">
+                    <h4 class="name__filter">Price</h4>
+                    <div class="d-flex form-group">
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        value=""
+                        placeholder="min"
+                        class="form-control me-0 me-md-2"
+                      />
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        value=""
+                        placeholder="max"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="filter__item border-1 border-bottom pt-3 pb-3">
+                    <h4 class="name__filter">Breed</h4>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="small"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label for="small"> small </label>
+                    </div>
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="medium"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label for="medium"> Medium </label>
+                    </div>
+
+                    <div class="d-flex form-group">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="Large"
+                        value=""
+                        class="form-check me-2"
+                      />
+                      <label for="Large"> Large </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div
+                  class="header__show__product d-flex align-items-center justify-content-between"
+                >
+                  <div class="header__product__left d-flex align-items-center">
+                    <h2 class="title__box me-3 text-primary">Small Dog</h2>
+                    <span class="quantity text-dark"> 52 puppies </span>
+                  </div>
+                  <div class="header__product__right">
+                    <div class="form-group">
+                      <select name="" class="form-select rounded-pill" id="">
+                        <option value="0">Sort by: Popular</option>
+                        <option value="1">Sort by: Selling</option>
+                        <option value="3">Sort by: Outstanding</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="show__product">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 2.png"
+                              alt="MO502 - Poodle Tiny Yellow"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO502 - Poodle Tiny Yellow
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Female</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>3.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 3.png"
+                              alt="MO102 - Poodle Tiny Sepia"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO102 - Poodle Tiny Sepia
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>4.000.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 4.png"
+                              alt="MO512 - Alaskan Malamute Grey"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO512 - Alaskan Malamute Grey
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>8.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 5.png"
+                              alt="MO502 - Poodle Tiny Yellow"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO502 - Poodle Tiny Yellow
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Female</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>3.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 8.png"
+                              alt="MO102 - Poodle Tiny Sepia"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO102 - Poodle Tiny Sepia
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>4.000.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 9.png"
+                              alt="MO512 - Alaskan Malamute Grey"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO512 - Alaskan Malamute Grey
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>8.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 13.png"
+                              alt="MO502 - Poodle Tiny Yellow"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO502 - Poodle Tiny Yellow
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Female</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>3.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 14.png"
+                              alt="MO102 - Poodle Tiny Sepia"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO102 - Poodle Tiny Sepia
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>4.000.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 15.png"
+                              alt="MO512 - Alaskan Malamute Grey"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO512 - Alaskan Malamute Grey
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>8.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 16.png"
+                              alt="MO502 - Poodle Tiny Yellow"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO502 - Poodle Tiny Yellow
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Female</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>3.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 17.png"
+                              alt="MO102 - Poodle Tiny Sepia"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO102 - Poodle Tiny Sepia
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>4.000.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 18.png"
+                              alt="MO512 - Alaskan Malamute Grey"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO512 - Alaskan Malamute Grey
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>8.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 19.png"
+                              alt="MO502 - Poodle Tiny Yellow"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO502 - Poodle Tiny Yellow
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Female</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>3.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 20.png"
+                              alt="MO102 - Poodle Tiny Sepia"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO102 - Poodle Tiny Sepia
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>4.000.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <div class="product__content p-3">
+                        <div class="image__product w-100">
+                          <a href="#">
+                            <img
+                              src="assets/image/category/image 21.png"
+                              alt="MO512 - Alaskan Malamute Grey"
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+                        <div class="info__product mt-3">
+                          <h4 class="name__product">
+                            MO512 - Alaskan Malamute Grey
+                          </h4>
+                          <p class="desc__product d-flex align-items-center">
+                            <span class="gender"> Gene: <b>Male</b> </span>
+                            <b>
+                              <span class="ms-3 me-3">.</span>
+                            </b>
+                            <span class="age">Age: <b>02 months</b></span>
+                          </p>
+                          <span class="price">
+                            <b>8.900.000 VND</b>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <ul
+                        class="list__pagination d-flex align-items-center justify-content-center"
+                      >
+                        <li class="pagination__item">
+                          <i class="fa-solid fa-arrow-left"></i>
+                        </li>
+                        <li class="pagination__item active">1</li>
+                        <li class="pagination__item">2</li>
+
+                        <li class="pagination__item">3</li>
+
+                        <li class="pagination__item">4</li>
+
+                        <li class="pagination__item">...</li>
+
+                        <li class="pagination__item">28</li>
+
+                        <li class="pagination__item">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer id="footer" class="text-light">
+        <div class="container pt-5 pb-5">
+          <div class="bg-primary rounded footer__contact p-4">
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="title__form text-center text-sm-start mb-3">
+                  Register now so you don't miss our programs
+                </h4>
+              </div>
+              <div class="col-md-8">
+                <div
+                  class="enter__form p-3 d-flex bg-white flex-column flex-md-row rounded align-items-start"
+                >
+                  <input
+                    type="text"
+                    class="me-3 form-control w-75"
+                    name="email"
+                    value=""
+                    placeholder="Enter your Email"
+                  />
+                  <button
+                    class="flex-grow-0 flex-md-grow-1 btn btn-primary mt-3 mt-md-0"
+                  >
+                    Subcribe Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border-bottom border-1 footer__menu pt-5 pb-4 d-flex mb-4 justify-content-between flex-md-row flex-column"
+          >
+            <ul class="list__menu d-flex p-0 flex-md-row flex-column">
+              <li class="menu__item">
+                <a href="#" class="me-md-3 me-0 menu__link text-dark"> Home </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  class="me-0 me-md-3 ms-md-3 ms-0 menu__link text-dark"
+                >
+                  Category
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  class="me-0 me-md-3 ms-md-3 ms-0 menu__link text-dark"
+                >
+                  About
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  class="me-0 me-md-3 ms-md-3 ms-0 menu__link text-dark"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <ul class="list__social d-flex p-0 flex-wrap">
+              <li class="social__item">
+                <a href="#" class="social__link pe-3 text-dark">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link pe-3 ps-3 text-dark">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link ps-3 pe-3 text-dark">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link ps-3 text-dark">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom pt-4">
+            <div class="row">
+              <div class="col-md-4 order-3 order-md-1">
+                <p class="text-dark p-0 text-center text-md-start">
+                  © 2022 Monito. All rights reserved.
+                </p>
+              </div>
+              <div class="col-md-4 text-center order-1 order-md-2">
+                <a class="navbar-brand" href="#">
+                  <img
+                    class="logo"
+                    src="assets/image/header/logo.png"
+                    alt="logo website"
+                  />
+                </a>
+              </div>
+              <div
+                class="col-md-4 text-center text-md-end order-2 order-md-3 mt-3 mb-3 mt-md-0 mb-md-0"
+              >
+                <a class="text-dark" href="#"> Terms of Service </a> &emsp;
+                <a href="#" class="text-dark"> Privacy Policy </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <!-- fontawesome -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- bootstrap 5 -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/js/toggle.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/select.js"></script>
+
+  <!-- slick slider -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="assets/js/slider.js"></script>
+</html>
